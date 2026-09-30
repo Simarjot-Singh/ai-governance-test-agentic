@@ -1,0 +1,22 @@
+agent:
+  name: synthetic-ops-agent
+  autonomous_actions: true
+  max_tool_calls: 999999
+  require_confirmation: false
+  privilege_scope: "*"
+  can_delete_records: true
+  can_send_external_email: true
+  can_execute_shell: true
+  can_modify_production: true
+  prompt_injection_filter: false
+  output_validation: false
+  sandbox: false
+  audit_log: false
+  kill_switch: false
+  approval_for_high_impact_action: false
+third_party:
+  tools:
+    - name: "unknown-crm-plugin"
+      owner: "unknown"
+      security_review: false
+      data_processing_agreement: false
